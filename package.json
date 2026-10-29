@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-emoji",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Emoji MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-emoji": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "emoji"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-emoji.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/emoji",
   "pipeworx": {
-    "sourceHash": "v1-f8fd279502161d14b1fbfcb0549fb621366b7278ae9eac09b927371b72f1c7c9",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "mode": "gateway",
+    "slug": "emoji",
+    "gatewaySlug": "emoji",
+    "sourceHash": "v1-2508389de204072b689bde2c2a05b8e56789055403152c57556869a7a00f2046",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }

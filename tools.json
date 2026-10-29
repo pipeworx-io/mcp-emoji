@@ -1,0 +1,38 @@
+[
+  {
+    "name": "emoji_lookup",
+    "description": "Look up an emoji by :shortcode: (e.g. \":fire:\" or \"fire\") to get the character + keywords, OR pass an emoji character to get its shortcode/name. Keyless, offline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "description": "A :shortcode:, a bare shortcode, or an emoji character."
+        }
+      },
+      "required": [
+        "input"
+      ]
+    }
+  },
+  {
+    "name": "search_emoji",
+    "description": "Search emoji by keyword/name (e.g. \"party\", \"money\", \"animal\") and return matching emoji with shortcodes. Keyless, offline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "A keyword to search."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 20)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]
