@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-emoji",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Emoji MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "emoji",
     "gatewaySlug": "emoji",
-    "sourceHash": "v1-2508389de204072b689bde2c2a05b8e56789055403152c57556869a7a00f2046",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-3925dd6ccdeb575efeb74e611129f5afec7d3ccc960073c20f80aa43ffd889ef",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
